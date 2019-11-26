@@ -1,0 +1,182 @@
+%formInput {
+ .ant-input,.ant-input-number {
+    border-width: 0 0 1px !important;height: 24px;font-size: 12px;border-radius: 0;line-height: 16px;padding: 4px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .ant-input-number {
+    .ant-input-number-input {
+      height: 16px;line-height: 16px;padding: 0;
+    }
+  }
+  .ant-form-explain {
+    position: absolute;margin-top: -2px;font-size: 12px;transform: scale(.8);transform-origin: 0 0;
+    transition: none;
+  }
+  .ant-select {
+    font-size: 12px;
+    .ant-select-selection--single {
+      height: 24px;border-width: 0 0 1px !important;border-radius: 0;
+    }
+    .ant-select-selection__rendered {
+      height: 24px;line-height: 24px;
+      margin-left: 0px;margin-right: 0px;
+    }
+    .ant-select-selection-selected-value {
+      margin-left: 5px;margin-right: 5px;
+    }
+    .ant-select-selection__placeholder {
+      margin-left: 5px;margin-right: 5px;
+    }
+    .ant-select-arrow {
+      right: 2px;
+    }
+  }
+  .ant-cascader-picker {
+    font-size: 12px;
+    .ant-cascader-picker-arrow {
+      right: 2px;
+    }
+  }
+}
+
+.new_antd {
+  .ant-card {
+    font-size: 12px;
+    .ant-card-head {
+      padding: 0 10px;min-height: 24px;font-size: 12px;color: #000000;font-weight: bold;
+      height: 24px !important;
+      .ant-card-head-wrapper {
+        line-height: 24px;height: 24px;min-height: 24px;
+      }
+      .ant-card-head-title {
+        padding: 0;line-height: 24px;
+      }
+    }
+    .ant-card-body {
+      padding: 10px 10px 0 !important;
+      // .ant-row {
+      //   margin: 0 !important;
+      // }
+    }
+  }
+  &.new_antd_detail {
+    .ant-card .ant-card-body {padding: 5px 10px !important;}
+  }
+  .ant-form {
+    font-size: 12px;
+    label {font-size: 12px;}
+    .ant-table-wrapper {
+      .ant-table {
+        font-size: 12px;
+        .ant-table-thead, .ant-table-tbody {
+          & > tr > th, & > tr > td {
+            padding: 5px;
+          }
+        }
+        @extend %formInput;
+      }
+    }
+  }
+  .ant-form.ant-form-vertical {
+    .ant-form-item {
+      padding-left: 100px;padding-bottom: 0;margin-bottom: 10px;
+      .ant-form-item-label {
+        position: absolute;width: 100px;left: 0;top: 0;text-align: right;line-height: 16px;padding: 4px 0;
+        white-space: inherit;overflow: visible;
+        label {
+          font-size: 12px;white-space: nowrap;display: block;position: absolute;right: 10px;top: 4px;height: 16px;
+        }
+        &:after {
+          content: ':';position: absolute;right: 2px;top:4px;text-align: center;
+        }
+      }
+      @extend %formInput;
+    }
+  }
+  .ant-form-inline .ant-form-item {
+    .ant-form-item-label {
+      line-height: 24px;
+    }
+    .ant-form-item-control-wrapper {
+      .ant-form-item-control {
+        line-height: 24px;font-size: 12px;
+      }
+    }
+  }
+}
+
+.di_fee_type_change_radio {
+  position: absolute;top: -32px;left: 100px;width: 220px;
+}
+.wa_waybill_edit {
+  .wa_paytype_select {
+    position: absolute;top: 3px;left: 100px;
+    .ant-radio-group {
+      font-size: 12px;
+    }
+  }
+  .ant-card {
+    margin-bottom: 10px;
+  }
+  .wa_remark {
+    margin-bottom: 10px;
+  }
+  .wa_paytype_choose {
+    position: relative;
+    .has-btn {
+      width: calc(100% - 50px);
+    }
+    .pipei_btn {
+      position: absolute !important;right: 0;top: 0;font-size: 12px;padding: 0 0 0 5px;
+      background: #fff;border: none;color: #1890ff;box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+  .wa_settlement_card {
+    .ant-form-item {
+      padding-left: 100px;padding-bottom: 0;margin-bottom: 10px;
+      .ant-form-item-label {
+        position: absolute;width: 100px;left: 0;top: 0;text-align: right;line-height: 16px;padding: 4px 0;
+        label {
+          font-size: 12px;
+          &:after {
+            display: none;
+          }
+        }
+        &:after {
+          content: '：'
+        }
+      }
+      .ant-form-item-control {
+        line-height: 1;
+      }
+      @extend %formInput;
+    }
+  }
+}
+
+.co_submit_layout {
+  // height: 52px;
+  .co_submit_fixed {
+    position: fixed;bottom: 0;left: 10px;right: 10px;text-align: center;background: #ffffff;
+    padding: 10px;border-top: 10px solid #f0f2f5;
+    .ant-btn {
+      margin: 0 5px;
+    }
+  }
+}
+
+.waybill-detail {
+  .wa_details_card {
+    border-bottom: 10px solid #fff;
+  }
+  .ant-tabs-bar {
+    // margin: 0;
+    margin-bottom: 10px;
+  }
+}
+.avOrderBox {
+  @extend %formInput;
+}

@@ -1,0 +1,10 @@
+import yibiaopan from '@/assets/icons/dj-yibiaopan.svg?inline'
+import dingdangl from '@/assets/icons/dj-dingdangl.svg?inline'
+import yundangl from '@/assets/icons/dj-yundangl.svg?inline'
+import jiesuangl from '@/assets/icons/dj-jiesuangl.svg?inline'
+import ziyuangl from '@/assets/icons/dj-ziyuangl.svg?inline'
+import xitonggl from '@/assets/icons/dj-xitonggl.svg?inline'
+import genzonggl from '@/assets/icons/dj-genzonggl.svg?inline'
+import diaodugl from '@/assets/icons/dj-diaodugl.svg?inline'
+import yonghuzhongxin from '@/assets/icons/dj-yonghuzhongxin.svg?inline'
+export { yibiaopan, dingdangl, yundangl, jiesuangl, ziyuangl, xitonggl, genzonggl, diaodugl, yonghuzhongxin }
